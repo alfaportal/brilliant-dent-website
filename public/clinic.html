@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brilliant Dent</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Outfit:wght@340;480;560&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/"><span class="mark">B</span><span><b>BRILLIANT</b><small>Dent · Aesthetic</small></span></a>
+    <button class="menu-btn" type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links">
+      <a href="/" data-i18n="home"></a>
+      <a href="/dent" data-i18n="dent"></a>
+      <a href="/estetike" data-i18n="aes"></a>
+      <a href="#sherbimet" data-i18n="services"></a>
+      <a href="#stafi" data-i18n="staff"></a>
+      <a href="#galeria" data-i18n="gallery"></a>
+      <a href="#kontakt" data-i18n="contact"></a>
+      <span class="langs"><button type="button" data-lang="sq">SQ</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></span>
+      <a class="btn btn-gold" href="#kontakt" data-i18n="book"></a>
+    </nav>
+  </header>
+  <section class="hero" id="ballina">
+    <div class="hero-copy">
+      <p class="kicker" data-bind="kicker"></p>
+      <h1 data-bind="hero"></h1>
+      <p class="lede" data-bind="sub"></p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#sherbimet" data-i18n="exploreDent"></a>
+        <a class="btn btn-line" href="#kontakt" data-i18n="book"></a>
+      </div>
+    </div>
+    <div class="hero-media"></div>
+  </section>
+  <section class="section" id="sherbimet">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="services"></h2></div>
+      <div class="service-grid" id="services"></div>
+    </div>
+  </section>
+  <section class="section" id="stafi">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="staff"></h2></div>
+      <div class="doctor-grid" id="doctors"></div>
+    </div>
+  </section>
+  <section class="section" id="rreth">
+    <div class="wrap about-grid">
+      <div>
+        <p class="kicker" data-i18n="about"></p>
+        <h2 data-bind="aboutTitle"></h2>
+        <p class="lede" data-bind="aboutBody"></p>
+      </div>
+      <img id="aboutImg" alt="">
+    </div>
+  </section>
+  <section class="section" id="puna">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="work"></h2></div>
+      <div class="ba-list" id="pairs"></div>
+    </div>
+  </section>
+  <section class="section" id="galeria">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="gallery"></h2></div>
+      <div class="gallery-grid" id="gallery"></div>
+    </div>
+  </section>
+  <section class="section" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker" data-i18n="contact"></p>
+        <h2 data-i18n="book"></h2>
+        <p id="address"></p>
+        <p id="phones"></p>
+        <a id="email"></a>
+        <ul class="hours" id="hours"></ul>
+        <iframe class="map" id="map" title="Harta" loading="lazy"></iframe>
+      </div>
+      <form id="form" class="panel" style="padding:1.2rem">
+        <label><span data-i18n="name"></span><input name="fullName" required></label>
+        <label><span data-i18n="phone"></span><input name="phone" required></label>
+        <label><span data-i18n="email"></span><input name="email" type="email"></label>
+        <label><span data-i18n="service"></span><select id="service" name="serviceName"></select></label>
+        <label><span data-i18n="date"></span><input name="preferredDate" type="date" required></label>
+        <label><span data-i18n="message"></span><textarea name="message"></textarea></label>
+        <input class="honeypot" name="website" tabindex="-1" autocomplete="off">
+        <button class="btn btn-navy" type="submit" data-i18n="send"></button>
+        <p class="note"></p>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> Brilliant Dent · Aesthetic Clinic</span>
+      <span id="footerSocial" class="icon-row"></span>
+    </div>
+  </footer>
+  <script src="/js/common.js"></script>
+  <script src="/js/clinic.js"></script>
+</body>
+</html>

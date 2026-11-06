@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profili</title>
+  <link rel="icon" href="/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Outfit:wght@340;480;560&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/"><span class="mark">B</span><span><b>BRILLIANT</b><small>Dent · Aesthetic</small></span></a>
+    <button class="menu-btn" type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links">
+      <a href="/" data-i18n="home"></a>
+      <a href="/dent" data-i18n="dent"></a>
+      <a href="/estetike" data-i18n="aes"></a>
+      <a id="back" href="/dent" data-i18n="back"></a>
+      <span class="langs"><button type="button" data-lang="sq">SQ</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></span>
+    </nav>
+  </header>
+  <main class="wrap profile">
+    <div class="profile-top">
+      <div class="profile-photo" id="photo"></div>
+      <div>
+        <p class="kicker" data-i18n="doctor"></p>
+        <h1 id="name"></h1>
+        <p class="lede" id="title"></p>
+        <div id="icons"></div>
+        <div class="hero-actions" id="direct"></div>
+      </div>
+    </div>
+    <div id="story"></div>
+    <section class="profile-block" id="offersWrap">
+      <h2 data-i18n="offers"></h2>
+      <ul class="service-pills" id="offers"></ul>
+    </section>
+    <section class="profile-block" id="workWrap">
+      <h2 data-i18n="portfolio"></h2>
+      <div class="gallery-grid" id="work"></div>
+    </section>
+    <p><a class="btn btn-gold" id="book" href="/dent#kontakt" data-i18n="book"></a></p>
+  </main>
+  <script src="/js/common.js"></script>
+  <script src="/js/doctor.js"></script>
+</body>
+</html>
